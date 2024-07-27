@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(29, 28, 28);
+    background: linear-gradient(to top left, rgb(29, 97, 243), rgb(184, 215, 240));
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+img{
+    height: 7rem;
+    width: 7rem;
+    position: absolute;
+    top: 22.5%;
+    border-radius: 0.75rem;
+    box-shadow: 0 1.5rem 1.5rem rgb(0, 0, 0, .1);
+}
+.container{
+    max-width: 100%;
+    height: 90%;
+    background: rgb(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.playersection{
+    padding: 2rem 5rem;
+    max-width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.playersection--0{
+    max-width: 50%;
+}
+.playersection--1{
+    max-width: 50%;
+}
+.btn{
+    position: absolute;
+    color: navy;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: .5rem 1.5rem ;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgba(177, 203, 243, 0.5);
+    cursor: pointer;
+    transition: all 0.75;
+    box-shadow: 0 0.5rem 0.5rem rgb(0, 0, 0, .1);
+}
+.playerActive{
+    background-color: rgb(186, 208, 241, .8);
+    opacity: 1;
+    font-weight: 800;
+}
+
+.btn:hover{
+    background-color: rgb(186, 208, 241, .7);
+}
+.emoji{
+    font-size: 2.5rem;
+}
+.btn-playAgain{
+    top: 10%;
+}
+.btn-rollDice{
+    top: 70%;
+}
+.btn-switchPlayer{
+    top: 82%;
+}
+h1{
+    text-transform: uppercase;
+    color: #000080;
+    font-size: 3rem;
+}
+.current{
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.currentScore{
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+}
+.downHolder{
+    background-color: rgb(0, 0, 255, .7);
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 75%;
+    padding: 1rem 2rem;
+    color: aliceblue;
+    
+}
+.playerActive .downHolder{
+    background-color: rgb(0, 0, 255);
+}
+.mainScore{
+    color: navy;
+    font-size: 4rem;
+}
+.playerActive .mainScore{
+    font-size: 4.25rem;
+}
+
+.downHolder0{
+    left: 25%;
+    transform: translateX(-50%);
+}
+.downHolder1{
+    right: 8.5%;
+    transform: translateX(-50%);
+}
+.hidden{
+    display: none;
+}
+.playerWinner{
+    background-color: rgb(6, 60, 129);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The FullStack Development journey continues with a dice game">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Javascript, DOM, Document Object Model">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main class="container">
+        <section class="playersection playersection--0 playerActive--0">
+            <h1 class="name--0">Player 1 </h1>
+            <p class="mainScore mainScore--0">12</p>
+
+            <div class="downHolder downHolder0">
+                <p class="current">Current</p>
+                <p class="currentScore currentScore--0">13</p>
+            </div>
+
+        </section>
+        <section class="playersection playersection--1 playerActive--1">
+            <h1 class="name--0">Player 2</h1>
+            <p class="mainScore mainScore--1">14</p>
+
+            <div class="downHolder downHolder1">
+                <p class="current">Current</p>
+                <p class="currentScore currentScore--1">15</p>
+            </div>
+        </section>
+        <img src="image/dice-4.png" alt="dice">
+        <button class="btn btn-playAgain"><span class="emoji">🔄️</span> Play Again</button>
+        <button class="btn btn-rollDice" type="button"><span class="emoji">🎲</span> Roll Dice</button>
+        <button class="btn btn-switchPlayer"><span class="emoji">🆗</span> Hold</button>
+    </main>
+    
+</body>
+</html>
